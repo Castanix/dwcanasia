@@ -1,0 +1,13 @@
+.catalog-grid-container {
+    flex: 4;
+    margin-inline: 2rem;
+    text-align: center;
+    color: red;
+}
+
+@media screen and (max-width: 374px) {
+    .catalog-grid-container img {
+        height: 120px;
+        width: 60px;
+    }
+}

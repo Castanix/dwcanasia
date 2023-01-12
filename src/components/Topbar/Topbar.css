@@ -1,0 +1,118 @@
+.topbar-container {
+    position: sticky;
+    top: 0px;
+    height: fit-content !important;
+    background-color: white !important;
+    color: white !important;
+
+    z-index: 2;
+    border-bottom: 1px solid black;
+}
+
+.topbar-flex-pc {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topbar-flex-mobile {
+    position: relative;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topbar-nav-mobile {
+    height: 0.5rem;
+}
+
+.logo {
+    width: 12.5rem !important;
+    color: red !important;
+    text-align: center;
+    font-weight: bold !important;
+    margin-block: 1.5rem !important;
+}
+
+.logo-small {
+    display: none !important;
+    color: red !important;
+    text-align: center;
+    font-weight: bold !important;
+}
+
+/* .ant-menu-item,
+.ant-menu-submenu-title {
+    height: 32px !important;
+}
+
+.ant-menu-title-content,
+.ant-menu-submenu-title span {
+    position: relative !important;
+    top: -16px !important;
+} */
+
+.topbar-toolbar,
+.topbar-toolbar-mobile {
+    margin-block: auto;
+}
+
+.topbar-toolbar-item {
+    font-size: 4rem;
+    color: darkgray;
+    /* border: 1px solid transparent;
+    border-radius: 4rem; */
+    padding: 0.5rem;
+}
+
+.topbar-toolbar-item:hover,
+.topbar-toolbar-item:focus,
+.delete-btn:hover,
+.delete-btn:focus {
+    color: red;
+}
+
+@media screen and (min-width: 1251px) {
+    .ant-input-affix-wrapper {
+        top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .logo {
+        display: none !important;
+    }
+
+    .logo-small {
+        display: block !important;
+    }
+
+    .topbar-toolbar-item {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .topbar-toolbar-item {
+        font-size: 2rem;
+    }
+
+    .topbar-flex-pc {
+        display: none;
+    }
+
+    .topbar-flex-mobile {
+        display: flex;
+    }
+
+    .topbar-container {
+        padding-inline: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .ant-drawer-content-wrapper {
+        width: 100vw !important;
+    }
+}

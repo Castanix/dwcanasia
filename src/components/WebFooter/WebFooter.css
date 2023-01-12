@@ -1,0 +1,9 @@
+.footer-container,
+.footer-background {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    padding: 0 !important;
+}

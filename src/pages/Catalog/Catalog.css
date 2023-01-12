@@ -1,0 +1,62 @@
+.catalog-page {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.catalog-menu-container {
+    position: relative;
+    flex: 1;
+}
+
+.catalog-menu {
+    max-width: 24rem !important;
+    max-height: 60vh !important;
+    border: 1px solid black !important;
+    border-radius: 0.5rem;
+    overflow-y: auto;
+}
+
+.catalog-menu-pc {
+    display: block;
+    position: sticky;
+    top: 12.5rem;
+}
+
+.catalog-menu-mobile {
+    display: none;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .catalog-menu-pc {
+        top: 14rem;
+        max-height: 40vh;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .catalog-menu-pc {
+        top: 6rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .catalog-page {
+        flex-direction: column;
+    }
+
+    .catalog-menu-pc {
+        display: none;
+    }
+
+    .catalog-menu-mobile {
+        display: block;
+    }
+
+    .catalog-menu {
+        overflow-y: hidden;
+    }
+}

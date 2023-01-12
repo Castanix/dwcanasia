@@ -1,0 +1,30 @@
+.product-main-flex-container {
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+.product-info-container {
+    margin-inline: 1rem;
+}
+
+.product-info-container h2 {
+    color: red;
+}
+
+.product-info-container p {
+    min-height: 25vh;
+}
+
+.product-cart-container {
+    margin-top: 1rem;
+    margin-inline: auto;
+}
+
+@media screen and (max-width: 1250px) {
+    .product-main-flex-container {
+        flex-direction: column;
+    }
+}

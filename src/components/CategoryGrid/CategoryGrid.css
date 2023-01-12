@@ -1,0 +1,16 @@
+.category-grid-container {
+    margin-block: 2rem;
+    margin-inline: auto;
+    width: 80vw;
+    max-width: 250rem;
+    text-align: center;
+}
+
+.category-grid-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.ant-list-item .ant-card {
+    border: 1px solid black;
+}

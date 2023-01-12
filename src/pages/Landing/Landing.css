@@ -1,0 +1,49 @@
+.banner-divide-container {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+}
+
+.back {
+    width: 100%;
+    height: 4rem;
+}
+
+.front {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    width: 90%;
+    height: 4rem;
+
+    transform: translateX(-50%);
+}
+
+.banner-content {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    margin-block: 0.75rem;
+}
+
+.catalog-button-container {
+    text-align: center;
+}
+
+.catalog-button-container .ant-btn-primary {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+    .banner-content {
+        font-size: large;
+        margin-block: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .banner-content {
+        font-size: medium;
+        margin-block: 1.5rem;
+    }
+}
