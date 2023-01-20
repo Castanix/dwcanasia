@@ -5,6 +5,7 @@ import { Pagination } from "swiper";
 
 import "./ProductSlider.css";
 import { StoreContext, AddToCart } from "../Others/StoreContext";
+import ImageMagnifier from "../MagnifyImage";
 
 const TabContents = (tab: string, cart: any) => {
     if (tab === "best") {
@@ -26,7 +27,8 @@ const TabContents = (tab: string, cart: any) => {
                 >
                     <SwiperSlide>
                         <div className="item-product">
-                            <img src="./images/200x200.png" alt=""></img>
+                            <ImageMagnifier src="./images/200x200.png" alt="" />
+                            {/* <img src="./images/200x200.png" alt=""></img> */}
                             <h3>Item 1</h3>
                             <Button onClick={() => AddToCart("test1", cart)}>Add to cart</Button>
                         </div>

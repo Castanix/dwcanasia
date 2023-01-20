@@ -2,6 +2,7 @@ import { CloseOutlined } from "@ant-design/icons"
 import { Drawer, List, InputNumber, Button } from "antd"
 import { useContext, useState } from "react";
 import { StoreContext } from "../Others/StoreContext";
+import { Link } from "react-router-dom";
 
 const CartDrawer = ({isOpen, setIsOpen}: {isOpen: boolean, setIsOpen: Function}) => {
     const { cart } = useContext(StoreContext);
@@ -36,10 +37,15 @@ const CartDrawer = ({isOpen, setIsOpen}: {isOpen: boolean, setIsOpen: Function})
                     </List.Item>
                 )}
             />
-            <Button 
-                type="primary" 
-                style={{backgroundColor: "red"}}
-                disabled={cart[0].length > 0 ? false : true}>Checkout Cart</Button>
+            <Link to="/checkout">
+                <Button 
+                    type="primary" 
+                    style={{backgroundColor: "red"}}
+                    disabled={Object.keys(cartValue).length > 0 ? false : true}
+                >
+                    Checkout Cart
+                </Button>
+            </Link>  
         </Drawer>
     )
 };

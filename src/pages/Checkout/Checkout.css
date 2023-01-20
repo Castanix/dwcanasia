@@ -1,0 +1,13 @@
+.checkout-page {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.checkout-cart-container {
+    flex: 1;
+}
+
+.checkout-payment-container {
+    flex: 1;
+}

@@ -14,6 +14,7 @@ import { GlobalStore } from './components/Others/StoreContext';
 import Authentication from './pages/Authentication/Authentication';
 import Catalog from './pages/Catalog/Catalog';
 import Product from './pages/Product/Product';
+import Checkout from './pages/Checkout/Checkout';
 
 const { Content } = Layout;
 
@@ -35,7 +36,7 @@ root.render(
                 <Route path="/register" element={<Authentication state="register" />} />
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/product" element={<Product />} />
-                <Route path="/checkout" element={<div>Page not implemented</div>} />
+                <Route path="/checkout" element={<Checkout />} />
                 <Route path="*" element={<div>Page not found</div>} />
               </Routes>
             </Content>
