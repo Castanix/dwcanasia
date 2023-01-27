@@ -15,6 +15,10 @@ import Authentication from './pages/Authentication/Authentication';
 import Catalog from './pages/Catalog/Catalog';
 import Product from './pages/Product/Product';
 import Checkout from './pages/Checkout/Checkout';
+import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
+import TradeShow from './pages/TradeShow/TradeShow';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 
 const { Content } = Layout;
 
@@ -37,6 +41,10 @@ root.render(
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/product" element={<Product />} />
                 <Route path="/checkout" element={<Checkout />} />
+                <Route path="/trade-show" element={<TradeShow />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/terms" element={<TermsAndConditions />} />
+                <Route path="/about" element={<About />} />
                 <Route path="*" element={<div>Page not found</div>} />
               </Routes>
             </Content>

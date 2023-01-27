@@ -2,7 +2,7 @@ import { Header } from 'antd/es/layout/layout';
 import React, { useContext, useState } from 'react';
 
 import './Topbar.css';
-import { EllipsisOutlined, SearchOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
+import { EllipsisOutlined, HomeFilled, SearchOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
 import { Input, Menu, MenuProps, Space, Typography } from 'antd';
 import TopbarDrawer from './TopbarDrawer';
 import { Link } from 'react-router-dom';
@@ -11,6 +11,10 @@ import { StoreContext } from '../Others/StoreContext';
 const { Title } = Typography;
 
 const items: MenuProps['items'] = [
+    {
+        icon: <Link to="/"><div className="home-icon"><HomeFilled /></div></Link>,
+        key: 'SubMenu0',
+    },
     {
         label: 'Placeholder1',
         key: 'SubMenu1',
@@ -123,7 +127,7 @@ const Topbar = () => {
                                 prefix={<SearchOutlined style={{color: 'gray'}} />}
                                 placeholder={'Search Item'} 
                             />
-                            <div><Menu mode='horizontal' items={items} /></div>
+                            <div><Menu selectable={false} mode='horizontal' items={items} /></div>
                         </section>
                     </div>
                     <section className="topbar-toolbar">
@@ -150,7 +154,7 @@ const Topbar = () => {
                     </section>
     
                     <TopbarDrawer isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} isMobile={true}>
-                        <Menu mode='vertical' items={items} />
+                        <Menu selectable={false} mode='vertical' items={items} />
                     </TopbarDrawer>
                 </div>
             </Header>

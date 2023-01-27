@@ -1,0 +1,11 @@
+.tradeshow-page {
+    width: 80%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 620px) {
+    .tradeshow-page ul {
+        padding: 0;
+    }
+}

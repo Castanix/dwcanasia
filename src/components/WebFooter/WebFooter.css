@@ -6,6 +6,10 @@
     padding: 0 !important;
 }
 
+.footer-mobile {
+    display: none;
+}
+
 .footer-background {
     width: 80%;
     text-align: center;
@@ -18,11 +22,18 @@
 }
 
 @media screen and (max-width: 620px) {
-    .footer-background {
-        width: 95%;
+    .footer-container {
+        height: fit-content;
     }
 
-    .footer-background a {
-        font-size: 0.5rem;
+    .footer-pc {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-block: 2rem;
+        gap: 1rem;
     }
 }

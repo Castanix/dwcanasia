@@ -16,7 +16,7 @@ const Landing = () => {
     
 
     return (
-        <section className="landing-container">
+        <section className="page landing-container">
             <HeroCarousel />
             <div className="banner-divide-container">
                 <div className="back" style={{backgroundColor: 'black'}} />

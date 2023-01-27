@@ -8,14 +8,14 @@ import { Register } from "./Register";
 
 
 const Authentication = ({state}: {state: String}) => {
-    const { showComponents } = useContext(StoreContext)
+    const { showComponents } = useContext(StoreContext);
 
     useEffect(() => {
         showComponents[1](false);
     });
 
     return (
-        <section className="authentication-page">
+        <section className="page authentication-page">
             <Card 
                 title={<Link to={state === "login" ? "/" : "/login"}><Button>Back</Button></Link>} 
                 bordered={false}

@@ -16,7 +16,7 @@ const AddToCart = (item: string, cart: any) => {
     }
 }
 
-const GlobalStore = ({ children }: {children: ReactElement}) => {
+const GlobalStore = ({ children }: { children: ReactElement }) => {
     const [cart, setCart] = useState<ICart>({});
     const [showComponents, setShowComponents] = useState<boolean>(true);
 
@@ -25,13 +25,11 @@ const GlobalStore = ({ children }: {children: ReactElement}) => {
         cart: [cart, setCart]
     }
 
-    return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
+    return <StoreContext.Provider value={ store }>{ children }</StoreContext.Provider>
 }
 
 export {
     StoreContext,
     AddToCart,
     GlobalStore,
-
-
 }

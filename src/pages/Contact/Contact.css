@@ -1,0 +1,62 @@
+.contact-page {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-page .sub-heading {
+    font-size: 4rem;
+}
+
+.contact-page .info {
+    font-size: 1.5rem;
+}
+
+.contact-page .map-container {
+    margin: auto;
+}
+
+.map {
+    width: 40vw;
+    max-width: 100rem;
+}
+
+@media screen and (max-width: 1240px) {
+    .contact-flex-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .map-container {
+        width: 80%;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .map-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contact-page .heading {
+        font-size: 1.5rem;
+        color: red;
+    }
+    
+    .contact-page .sub-heading {
+        font-size: 2.5rem;
+    }
+    
+    .contact-page .info {
+        font-size: 0.75rem;
+    }
+}

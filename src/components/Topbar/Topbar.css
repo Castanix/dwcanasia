@@ -42,17 +42,6 @@
     font-weight: bold !important;
 }
 
-/* .ant-menu-item,
-.ant-menu-submenu-title {
-    height: 32px !important;
-}
-
-.ant-menu-title-content,
-.ant-menu-submenu-title span {
-    position: relative !important;
-    top: -16px !important;
-} */
-
 .topbar-toolbar,
 .topbar-toolbar-mobile {
     margin-block: auto;
@@ -71,6 +60,10 @@
 .delete-btn:hover,
 .delete-btn:focus {
     color: red;
+}
+
+.home-icon {
+    transform: translateX(35%);
 }
 
 @media screen and (min-width: 1251px) {

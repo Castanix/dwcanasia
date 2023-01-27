@@ -8,7 +8,7 @@ const Checkout = () => {
     const { cart } = useContext(StoreContext);
 
     return (
-        <section className="checkout-page">
+        <section className="page checkout-page">
             <section className="checkout-cart-container">
                 <List
                     header={<div>Cart</div>}

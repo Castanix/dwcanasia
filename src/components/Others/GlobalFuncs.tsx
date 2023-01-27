@@ -1,5 +1,5 @@
 const onMobile = () => {
-    return window.innerWidth < 640;
+    return window.innerWidth <= 620;
 }
 
 

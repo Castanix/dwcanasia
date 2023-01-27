@@ -5,7 +5,7 @@ import "./Product.css";
 
 const Product = () => {
     return (
-        <section className="product-page">
+        <section className="page product-page">
             <section className="product-main-flex-container">
                 <ProductShowcase />
                 <section className="product-info-container">

@@ -109,7 +109,7 @@ const Catalog = () => {
     });
 
     return (
-        <section className="catalog-page">
+        <section className="page catalog-page">
             <section className="catalog-menu-container">
                 <div className="catalog-menu-pc">
                     <Menu
