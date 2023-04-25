@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-A practice design for D&W Canasia. Only has layout for base pages.
+A practice design for D&W Canasia. Only has layout for base pages. Created with Antd.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
